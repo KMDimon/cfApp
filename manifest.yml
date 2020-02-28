@@ -1,0 +1,9 @@
+---
+applications:
+# Application
+- name: cfApp
+  instances: 1
+  memory: 1024M
+  timeout: 60
+  path: target/cfApp.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.28
